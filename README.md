@@ -21,7 +21,7 @@ The Web application penetration Testing lab is to demonstrate web application se
 
 # Tools Used
 
-- Burp Suite Community Edition for Web application Penetration Vulnerability testing. A very powerful tool for Web application security testing,SQLi, XSS,CSRFintercept request,modify them,craft payloads.
+- Burp Suite Community Edition is used for Web application Penetration Vulnerability testing. A very powerful tool for Web application security testing,SQLi, XSS,CSRFintercept request,modify them,craft payloads.
 
 
 # Steps
@@ -52,48 +52,3 @@ Fig8: The request was modified with JavaScript code and forwarded back to the we
 
 Fig9: We successfully injected the malicious JavaScript code into the web application, confirming that the website is vulnerable to XSS (Cross-Site Scripting).
 ![Capture](https://github.com/user-attachments/assets/1106664a-0fc4-469c-8bb5-de82d4757ff6)
-
-
-
-
-
-# SQL inJection Lab
-
-The objective in this lab is to identify and exploit a Union SQL Injection vulnerability present in the ID parameter of the /about/ID endpoint of a Web application. By leveraging this vulnerability, with the help of Burp Suite, an attack to retrieve the notes about the CEO stored in the database.
-
-
-
-# Tools Used
-
-- Burp Suite Community Edition for Web application Penetration Vulnerability testing. A very powerful tool for Web application security testing,SQLi, XSS,CSRFintercept request,modify them,craft payloads.
-
-
-# Steps
-
-Fig1: Here is the website we are testing the SQLi on. Let's visit the CEO profile page since it's our target here.
-![Capture](https://github.com/user-attachments/assets/a16fb162-bdaa-4118-8008-92f99cfcb08f)
-
-
-Fig2: Burp Suite Proxy is used to intercept the request and Foward it to the repeater.
-![Capture](https://github.com/user-attachments/assets/1b2d02fe-304a-4ac6-8a55-8a7152f6340d)
-
-
-Fig3: Let's confirm that an SQL vulnerability exists by adding a single apostrophe (') to the /about/2 path in the request view. We can see in the Response view a confirmation that the vulnerability actually exists.
-![Capture](https://github.com/user-attachments/assets/7fd27d99-5681-4734-b1b9-b839a2908ba4)
-
-
-The message tells us a couple of things that will be invaluable when exploiting this vulnerability:
-
-The database table we are selecting from is called people.
-The query selects five columns from the table: firstName, lastName, pfpLink, role, and bio.
-
-Fig4: We will try to retreive all info contained in the people table.Using the following command
-/about/0 UNION ALL SELECT group_concat(column_name),null,null,null,null FROM information_schema.columns WHERE table_name="people"
-We have a complete information about the table in the Request view.
-![Capture](https://github.com/user-attachments/assets/831ca78e-f1a3-4146-ab5f-306b2b7e4617)
-
-Fig5: Now that we have successfully identified eight columns in this table: id, firstName, lastName, pfpLink, role, shortRole, bio, and notes, let's craft a query accordingly to exctract the information from the database.
-0 UNION ALL SELECT notes,null,null,null,null FROM people WHERE id = 1
-![Capture](https://github.com/user-attachments/assets/aa78dc3a-8e39-44bf-b3ef-6040d1564ce0)
-
-The information stored in the database is THM{ZGE3OTUyZGMyMzkwNjJmZjg3Mzk1NjJh}
