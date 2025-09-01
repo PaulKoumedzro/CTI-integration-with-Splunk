@@ -45,11 +45,12 @@ Fig5: using the "src_ip" field appended to the previous command we now see the t
 Fig6: Failed Authentication by User.
 <img width="1918" height="930" alt="image" src="https://github.com/user-attachments/assets/674b526f-0f97-4e37-9799-f01ef0fe2be4" />
 
-Fig7: Request intercepted by Burp Suite Repeater.
-![Capture1](https://github.com/user-attachments/assets/48de92ec-6cc5-4c32-a302-55038da948a7)
+Fig7: We'll now search for successful authentication events to determine if any users were able to access SSH successfully
+<img width="1919" height="985" alt="image" src="https://github.com/user-attachments/assets/383da165-3fef-46f7-8dee-c998f368d5e3" />
 
-Fig8: The request was modified with JavaScript code and forwarded back to the web server.
-![Capture1](https://github.com/user-attachments/assets/dbec42c9-ac4e-4869-8962-be0a8eb5c5d1)
+Fig8: Heatmap of network activity is created to visualize what countries the source IPs orginated from.
+<img width="1918" height="993" alt="image" src="https://github.com/user-attachments/assets/58e80111-a894-49ea-8c72-679d5388777a" />
+
 
 Fig9: We successfully injected the malicious JavaScript code into the web application, confirming that the website is vulnerable to XSS (Cross-Site Scripting).
 ![Capture](https://github.com/user-attachments/assets/1106664a-0fc4-469c-8bb5-de82d4757ff6)
