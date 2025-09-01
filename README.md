@@ -21,7 +21,11 @@ The Web application penetration Testing lab is to demonstrate web application se
 
 # Tools Used
 
-- Burp Suite Community Edition is used for Web application Penetration Vulnerability testing. A very powerful tool for Web application security testing,SQLi, XSS,CSRFintercept request,modify them,craft payloads.
+- Open CTI
+- Splunk server
+- Linux
+- Windows
+- Docker Compose
 
 
 # Steps
