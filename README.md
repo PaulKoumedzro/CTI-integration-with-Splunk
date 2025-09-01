@@ -26,7 +26,7 @@ The Web application penetration Testing lab is to demonstrate web application se
 
 # Steps
 
-Fig1: Date and time filter were used along with the index "mydfir-lab1" and search keyword "failed" to seach for logs that have "failed" keyword in them and display the result..
+Fig1: Logs containing the keyword 'failed' were retrieved using a date and time filter in conjunction with the index 'mydfir-lab1
 <img width="1915" height="982" alt="1" src="https://github.com/user-attachments/assets/91bd6c06-607a-46e3-91f0-12ffef7c5b5b" />
 
 Fig2: Proxyfox is configure to work with Burp Suite.
