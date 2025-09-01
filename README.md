@@ -36,14 +36,14 @@ Fig3: The default fields will now be used to perform a search for the top users.
 ![3](https://github.com/user-attachments/assets/2752875a-e64c-4561-8852-2bb1765ad65d)
 
 
-Fig4: In the site mapping under the Target menu, we found information revealing a GET request on a hidden link we discovered.
-![Capture1](https://github.com/user-attachments/assets/7faf92f6-363c-4a73-b0d6-a6f50a28363d)
+Fig4: We now see that our top failed user is root
+![2](https://github.com/user-attachments/assets/45c26db2-ef0c-4656-85c7-43bd0f085970)
 
-Fig5: It's confirmed that we could access and read the information by visiting the previously discovered link.
-![Capture](https://github.com/user-attachments/assets/14771851-62c7-470d-b8e4-8cde66dd906e)
+Fig5: using the "src_ip" field appended to the previous command we now see the top source IP 
+<img width="1911" height="971" alt="image" src="https://github.com/user-attachments/assets/9cbbbcab-d04b-4f96-94fd-eaba0ec47b2c" />
 
-Fig6: Testing for stored XSS on the website's ticket submission form.
-![Capture](https://github.com/user-attachments/assets/8e7c7855-f5b8-4390-ab36-062c4760fc88)
+Fig6: Failed Authentication by User.
+<img width="1918" height="930" alt="image" src="https://github.com/user-attachments/assets/674b526f-0f97-4e37-9799-f01ef0fe2be4" />
 
 Fig7: Request intercepted by Burp Suite Repeater.
 ![Capture1](https://github.com/user-attachments/assets/48de92ec-6cc5-4c32-a302-55038da948a7)
