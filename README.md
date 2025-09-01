@@ -1,4 +1,4 @@
-# Web Application Testing Lab with Burp Suite
+# Cyber Threat Intelligence integrated with Splunk
 
 # Objective
 
