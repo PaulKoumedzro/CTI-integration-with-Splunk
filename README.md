@@ -29,11 +29,12 @@ The Web application penetration Testing lab is to demonstrate web application se
 Fig1: Logs containing the keyword 'failed' were retrieved using a date and time filter in conjunction with the index 'mydfir-lab1
 <img width="1915" height="982" alt="1" src="https://github.com/user-attachments/assets/91bd6c06-607a-46e3-91f0-12ffef7c5b5b" />
 
-Fig2: Proxyfox is configure to work with Burp Suite.
-![Capture](https://github.com/user-attachments/assets/87bda66b-f559-4d2c-8108-e45032a76e5e)
+Fig2: As part of Splunk search best practices, we'll open an event to review all available fields and determine which ones we can leverage in our query.
+![2](https://github.com/user-attachments/assets/5015e641-442b-48f9-84b2-c4dbf0910795)
 
-Fig3: Let's test the security on the following website.
-![Capture](https://github.com/user-attachments/assets/73aec982-24ea-488d-a642-fa58a4fd6a88)
+Fig3: The default fields will now be used to perform a search for the top users.
+![3](https://github.com/user-attachments/assets/2752875a-e64c-4561-8852-2bb1765ad65d)
+
 
 Fig4: In the site mapping under the Target menu, we found information revealing a GET request on a hidden link we discovered.
 ![Capture1](https://github.com/user-attachments/assets/7faf92f6-363c-4a73-b0d6-a6f50a28363d)
