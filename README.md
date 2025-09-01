@@ -51,6 +51,8 @@ Fig7: We'll now search for successful authentication events to determine if any 
 Fig8: Heatmap of network activity is created to visualize what countries the source IPs orginated from.
 <img width="1918" height="993" alt="image" src="https://github.com/user-attachments/assets/58e80111-a894-49ea-8c72-679d5388777a" />
 
+Fig9: Creation of new dashboard titled "SSH Activity" to save  search results.
+![1](https://github.com/user-attachments/assets/28954959-b40c-4922-8b70-8b2b96ee0f3e)
 
-Fig9: We successfully injected the malicious JavaScript code into the web application, confirming that the website is vulnerable to XSS (Cross-Site Scripting).
-![Capture](https://github.com/user-attachments/assets/1106664a-0fc4-469c-8bb5-de82d4757ff6)
+Fig10: Searches are saved into dashboard for later visualization and analysis.
+<img width="1917" height="990" alt="image" src="https://github.com/user-attachments/assets/3c6010cf-a084-45f4-bf02-ee284badede7" />
