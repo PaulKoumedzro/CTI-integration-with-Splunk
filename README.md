@@ -1,4 +1,4 @@
-# Investigate SSH brute force with Splunk
+# Investigate SSH brute-force with Splunk
 
 # Objective
 
