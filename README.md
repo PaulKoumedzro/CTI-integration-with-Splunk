@@ -2,21 +2,19 @@
 
 # Objective
 
-The Web application penetration Testing lab is to demonstrate web application security testing using Burp Suite, a powerful suite of tools used to identify and exploit vulnerabilities in web applications. This lab provides a safe, controlled environment to explore and showcase various Burp Suite tools, including intruder, repeater, scanner, and proxy,  and provide step-by-step guidance on using Burp Suite to discover and analyze vulnerabilities.
+The goal of this lab is to simulate a real-world SSH brute-force investigation using Splunk. I will ingest SSH authentication logs, users locations, craft targeted SPL searches to detect repeated failed login attempts, and correlate those events to pinpoint the attack vectors.
 
 
 # Skills Learned
-- Setting up and Configuring Burp Suite: configuring the Burp Suite proxy settings to intercept HTTP/HTTPS traffic
-- Intercepting and Manipulating HTTP Requests: capturing requests and responses with the Proxy tool.
-- Modifying  request parameters,headers, and cookies for manual testing.
-- Runing scans to detect common web vulnerabilities like SQL injection, XSS, and CSRF.
-- Testing session management to identify insecure session handling and cookie weakness.
-- Manual vulnerability Testing with Repeater.Repeating and modifying requests to test for SQLi,XSS and other input-based vulnerabilities.
-- Using Intruder to brute-force login and bypass authentication.
-- Utilizing the Target tool to map the web application's endpoints and understand its structure.
-- Learning about secure coding practices to mitigate identified vulnerabilities.
-- Documenting vulnerabilities,their impact, and their potential remediation.
-- Exporting reports and organinizing findings for stakeholders.
+- Setting up and Configuring Splunk
+- Learn element that make up splunk such Index, Universal forwarder and Search bar.
+- Write splunk query (SPL)
+- Create & save dashboard
+- Filter search
+- Create an alert.
+- create & schedule a report
+- Follow Splunk best practice.
+- Correlate SSH faileures and network traffic data to map attack patch.
 
 
 # Tools Used
